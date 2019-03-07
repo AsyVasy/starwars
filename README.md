@@ -6,6 +6,7 @@ Afficher la liste des Personnages (people), des planètes (planets) et des vaiss
 
 
 ➜ npm i
+
 ➜ parcel src/templates/index.html
 
 Enjoy ;)
