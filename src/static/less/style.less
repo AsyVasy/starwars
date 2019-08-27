@@ -1,114 +1,113 @@
-@body-color:#040e25;
-@body-text-color:#ffffff;
+@body-color: #040e25;
+@body-text-color: #ffffff;
 @zone-color: #65708c;
 @text-color: #18233c;
 
 @font-face {
-    font-family: "Star wars";
-    src: url(../fonts/starjedi/Starjhol.ttf)
-    }
+	font-family: 'Star wars';
+	src: url(../fonts/starjedi/Starjhol.ttf);
+}
 
 body {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 
-    background: url(../img/x-wing.gif) no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: @body-text-color;
+	background: url(../img/x-wing.gif) no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: @body-text-color;
 
-    text-align: center;
+	text-align: center;
 }
 
 .app > h1 {
-    background-color: @body-color
-
+	background-color: @body-color;
 }
 .app {
-    &:first-child {
-        margin-top: 25px;
+	&:first-child {
+		margin-top: 25px;
+		min-width: 100vw;
 
-        & h1 {
-            text-transform: capitalize;
-            color: #FFE919;
-            font-family: 'Star wars';
-        }
-
-
-    }
-    opacity: 0.8;
+		& h1 {
+			text-transform: capitalize;
+			color: #ffe919;
+			font-family: 'Star wars';
+		}
+	}
+	opacity: 0.8;
 }
 
-
 .zone-wrapper {
-    position: relative;
+	position: relative;
 
-    width: 80%;
-    margin: auto;
-    
-    text-align: center;
+	// width: 80%;
 
-    .zone {        
-        position: relative;
-        display: inline-block;
-        vertical-align: top;
+	margin: auto;
 
-        width: 30%;
-        height: 500px;
+	text-align: center;
 
-        margin: 15px;
+	.zone {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
 
-        border-radius: 10%;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        
-        background-color: @zone-color;
-        color: @text-color;
-        
-        .screen {
-            
-            width: 90%;
-            height: 80%;
-            
-            margin: auto;
-            
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            border-radius: 2px;
-            background-color: white;
-            border-radius: 10px;
-            
-            color: @text-color;
+		width: 30%;
+		height: 500px;
 
-            // p {
-            //     display: inline-block;
-            //     margin-top: 25px;
+		min-width: 250px;
 
-            //     word-break: break-all;
-            // }
+		margin-bottom: 15px;
 
-            ul {
-                list-style: none;
-                height: 100%;
-                padding: 0;
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                // align-content: space-around;
-                // align-items: center;
-                
-                li {
-                    width: 100%;
-                    transition: .3s;
-                    font-size: 20px
-                }
-                li:hover {
-                    transition: .3s;
-                    background: grey;
-                    cursor: pointer;
-                    color: red;
-                    font-weight: 30px
-                }
-            }
-        }
-    }
-}       
+		border-radius: 10%;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+		background-color: @zone-color;
+		color: @text-color;
+
+		.screen {
+			width: 90%;
+			height: 80%;
+
+			margin: auto;
+
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+			border-radius: 2px;
+			background-color: white;
+			border-radius: 10px;
+
+			color: @text-color;
+
+			// p {
+			//     display: inline-block;
+			//     margin-top: 25px;
+
+			//     word-break: break-all;
+			// }
+
+			ul {
+				list-style: none;
+				height: 100%;
+				padding: 0;
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				// align-content: space-around;
+				// align-items: center;
+
+				li {
+					width: 100%;
+					transition: 0.3s;
+					font-size: 20px;
+				}
+				li:hover {
+					transition: 0.3s;
+					background: grey;
+					cursor: pointer;
+					color: red;
+					font-weight: 30px;
+				}
+			}
+		}
+	}
+}
