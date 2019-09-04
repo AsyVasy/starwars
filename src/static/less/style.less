@@ -25,8 +25,9 @@ body {
 }
 .app {
 	&:first-child {
-		margin-top: 25px;
 		min-width: 100vw;
+		height: 100vh;
+		z-index: 5000;
 
 		& h1 {
 			text-transform: capitalize;
@@ -38,12 +39,6 @@ body {
 }
 
 .zone-wrapper {
-	position: relative;
-
-	// width: 80%;
-
-	margin: auto;
-
 	text-align: center;
 
 	.zone {
@@ -106,6 +101,40 @@ body {
 					cursor: pointer;
 					color: red;
 					font-weight: 30px;
+				}
+			}
+		}
+	}
+
+	div.starter {
+		position: relative;
+		transition: 0.5s;
+		top: 0;
+	}
+	div.infosZone {
+		position: relative;
+		transition: 0.5s;
+		animation: fade-in-out 6s ease infinite 2s;
+		overflow: auto;
+
+		.info-zone {
+			width: 70%;
+			height: 70%;
+			h1 {
+				font-size: 30px;
+			}
+			.screen {
+				ul {
+					display: flex;
+					justify-content: space-evenly;
+
+					width: 100%;
+					li {
+						display: inline;
+						widows: 50px;
+						font-size: 15px;
+						overflow-wrap: break-word;
+					}
 				}
 			}
 		}
